@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.card-component {
+    border: 1px solid darkgray;
+}
+
+img {
+    width: 400px;
+    display:block;
+}

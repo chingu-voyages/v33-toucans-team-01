@@ -9,6 +9,20 @@
     box-sizing: border-box;
 }
 
+.mid-page-content {
+    background-color: #f9f9fb;
+    padding: 72px 0px;
+    text-align: center;
+    font-family: "IvarHeadline", 'Times New Roman', serif;
+}
+
+.mid-page-header {
+    margin: 10px 0 40px 0;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 24px;
+
+}
 
 .card-container {
     display: flex;
@@ -18,10 +32,10 @@
 
 .card-component {
     background-color: rgb(255, 255, 255);
-    border: 1px solid darkgray;
     margin-bottom: 15px;
     padding: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    box-shadow: 0px 2px 4px 0px rgb(0,0,0,.3);
 }
 
 .card-component-content {
@@ -54,11 +68,12 @@
     padding: 9px 16px;
     margin: 24px 0 16px 0;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 700;
     
 }
 
 img {
+    margin-top: 16px;
     width: 100%;
     display:block;
 }

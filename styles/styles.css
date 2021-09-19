@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.svclinks-container {
+    margin: auto;
+    padding: 31px 24px;
+    margin: 0px;
+}
+
+.svclinks__list {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+
+.svclinks__list li {
+    flex-grow: 1;
+}
+
+.svclinks__list li::before {
+    content: ' ';
+    width: 1px;
+    background: red;
+    height: 32px;
+    position: absolute;
+    top: 5rem;
+}
+
+.svclinks__list li:nth-child(1)::before {
+    display: none;
+}
+
+button{
+    padding: 12px 40px 12px 16px;
+    margin: auto;
+    line-height: 24px;
+    background: transparent url(/Images/Icons/Chevron\ Down.svg) no-repeat right center;
+    background-size: 40px 15px;
+    display: block;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+
+span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-right: 8px;
+    color: #2a2a33;
+    font-weight: 600;
+}
+
+.svclinks__list div {
+    display: flex;
+    justify-content: center;
+}
+

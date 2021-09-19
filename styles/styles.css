@@ -214,4 +214,101 @@ span {
 .svclinks__list div {
   display: flex;
   justify-content: center;
+} 
+ 
+
+.header-container{
+  padding: 0;
+  font-family:'Segoe UI';
+  font-size: 15px; 
+  background-color: black; 
+  height: 45px;
+  width: 100%;
 }
+
+.header-container_dropdown_icons{
+  display: none; 
+  top: .05%;
+  left: 2rem;
+  position: absolute; 
+  cursor: auto;
+  font-size: 20px;
+}  
+
+.header-container_nav-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: auto; 
+  list-style: none;
+  text-decoration: none;
+}
+
+.header-container_nav-list li:hover .header-container_sub-dropdown {
+  display: block;
+}
+
+.header-container_nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-container_nav-list > li > a{
+  display: block;  
+  height: 45px;
+  line-height: 45px;
+}
+
+.header-container_sub-dropdown li{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.header-container_sub-dropdown > li{
+  position: relative;
+}
+
+.header-container_sub-dropdown{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100%;
+  overflow: auto;
+  background-image: url(./Images/road.jpg);
+  background-size: cover;   
+}
+
+.header-container_sub-dropdown ul {
+  margin: auto;
+}
+
+.header-container_sub-dropdown ul li{
+  padding: 10px 0;
+}
+
+.header-container_sub-dropdown ul li a{
+  padding: 10px 0;
+  color: white;
+}
+
+.header-container_title{
+  font-size: 30px;
+  color: white;
+}
+
+.header-container_nav-list, .header-container_sub-dropdown ul {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.header-container_icons i{
+  color: black;
+  font-size: 30px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+
+

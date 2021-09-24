@@ -8,6 +8,111 @@
   padding: 0;
   box-sizing: border-box;
 }
+img {
+  width: 100%;
+}
+
+/* ===================
+        Header
+=======================  */
+.header-container {
+  padding: 0;
+  font-family: 'Segoe UI';
+  font-size: 15px;
+  background-color: black;
+  height: 45px;
+  width: 100%;
+}
+
+.header-container_dropdown_icons {
+  display: none;
+  top: 0.05%;
+  left: 2rem;
+  position: absolute;
+  cursor: auto;
+  font-size: 20px;
+}
+
+.header-container_nav-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: auto;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header-container_nav-list li:hover .header-container_sub-dropdown {
+  display: block;
+}
+
+.header-container_nav-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-container_nav-list > li > a {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+}
+
+.header-container_sub-dropdown li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.header-container_sub-dropdown > li {
+  position: relative;
+}
+
+.header-container_sub-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100%;
+  overflow: auto;
+  background-image: url(./Images/road.jpg);
+  background-color: ;
+  background-size: cover;
+}
+
+.header-container_sub-dropdown ul {
+  margin: auto;
+}
+
+.header-container_sub-dropdown ul li {
+  padding: 10px 0;
+}
+
+.header-container_sub-dropdown ul li a {
+  padding: 10px 0;
+  color: white;
+}
+
+.header-container_title {
+  font-size: 30px;
+  color: white;
+}
+
+.header-container_nav-list,
+.header-container_sub-dropdown ul {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.header-container_icons i {
+  color: black;
+  font-size: 30px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+/* ===================
+        Cards
+=======================  */
 
 .mid-page-content {
   background-color: #f9f9fb;
@@ -157,6 +262,10 @@ img {
   }
 }
 
+/* ===================
+    Bottom Dropdown 
+=======================  */
+
 .svclinks-container {
   margin: auto;
   padding: 31px 24px;
@@ -177,17 +286,17 @@ img {
 .svclinks__list li::before {
   content: ' ';
   width: 1px;
-  background: red;
+  background: gray;
   height: 32px;
+  padding-top: 10px;
   position: absolute;
-  top: 5rem;
 }
 
 .svclinks__list li:nth-child(1)::before {
   display: none;
 }
 
-button {
+.svclinks__list-btn {
   padding: 12px 40px 12px 16px;
   margin: auto;
   line-height: 24px;
@@ -199,11 +308,11 @@ button {
   border: none;
 }
 
-button:hover {
+.svclinks__list-btn:hover {
   text-decoration: underline;
 }
 
-span {
+.btn-label {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin-right: 8px;
@@ -214,101 +323,129 @@ span {
 .svclinks__list div {
   display: flex;
   justify-content: center;
-} 
- 
-
-.header-container{
-  padding: 0;
-  font-family:'Segoe UI';
-  font-size: 15px; 
-  background-color: black; 
-  height: 45px;
-  width: 100%;
 }
 
-.header-container_dropdown_icons{
-  display: none; 
-  top: .05%;
-  left: 2rem;
-  position: absolute; 
-  cursor: auto;
-  font-size: 20px;
-}  
-
-.header-container_nav-list {
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  margin: auto; 
-  list-style: none;
-  text-decoration: none;
+/* ==========
+    Footer
+============  */
+footer {
+  margin: 0 1.5em;
+  font-weight: 500;
 }
-
-.header-container_nav-list li:hover .header-container_sub-dropdown {
+footer a {
+  color: #0d4599;
+}
+.footer-links {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  margin: 0 1em;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.footer-links_list {
   display: block;
+  margin: 2em -6em;
+  padding-left: 0;
+  columns: 2;
 }
+.footer-links_list a {
+  color: #2a2a37;
+}
+@media (min-width: 500px) {
+  .footer-links {
+    margin: 0 4em;
+    font-size: 0.6rem;
+  }
+  .footer-links_list {
+    margin: 0 5em;
 
-.header-container_nav-list a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.footer-links_list-item {
   text-decoration: none;
-  color: white;
+  margin: 1em;
+  list-style: none;
 }
-
-.header-container_nav-list > li > a{
-  display: block;  
-  height: 45px;
-  line-height: 45px;
-}
-
-.header-container_sub-dropdown li{
+.footer-links_list-item a {
   text-decoration: none;
-  list-style-type: none;
+}
+.footer-links_personal-info {
+  text-decoration: none;
+
+  margin: 1.9em 0;
+}
+.footer-links_personal-info a {
+  text-decoration: none;
+}
+.footer-links_personal-info a:hover {
+  text-decoration: underline;
+}
+.footer-links_personal-info:visited {
+  color: #7a48d6;
+}
+.footer-info {
+  margin-top: 2em;
+  text-align: center;
+  line-height: 15px;
+}
+.footer-info-2_contact {
+  display: block;
+  font-size: 0.7rem;
+  margin: 1em 0;
+}
+.footer-app-links {
+  display: flex;
+  justify-content: center;
+}
+.footer-app-links img {
+  height: 32px;
+  width: 108px;
+}
+.footer-logo {
+  width: 152px;
+  height: 32px;
+  margin: 1.5em auto;
 }
 
-.header-container_sub-dropdown > li{
-  position: relative;
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+.footer-icons img {
+  width: 28px;
+  height: 27.85px;
+  margin: 0 0.5em;
+}
+.footer-icons_text {
+  display: flex;
+  align-items: flex-end;
+  color: #666;
+  font-style: italic;
 }
 
-.header-container_sub-dropdown{
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 45px;
-  width: 100%;
-  overflow: auto;
-  background-image: url(./Images/road.jpg);
-  background-size: cover;   
+.footer-icons_copyright {
+  display: flex;
+  align-items: flex-end;
 }
-
-.header-container_sub-dropdown ul {
-  margin: auto;
+.footer-image {
+  margin-top: 7em;
 }
-
-.header-container_sub-dropdown ul li{
-  padding: 10px 0;
+.footer-info,
+.footer-app-links,
+.footer-icons {
+  font-size: 0.8rem;
 }
-
-.header-container_sub-dropdown ul li a{
-  padding: 10px 0;
-  color: white;
+@media (min-width: 500px) {
+  .footer-info,
+  .footer-app-links,
+  .footer-icons {
+    font-size: 0.5rem;
+    margin: 2em auto;
+    width: 500px;
+  }
 }
-
-.header-container_title{
-  font-size: 30px;
-  color: white;
-}
-
-.header-container_nav-list, .header-container_sub-dropdown ul {
-  max-width: 1280px;
-  width: 100%;
-}
-
-.header-container_icons i{
-  color: black;
-  font-size: 30px;
-  line-height: 80px;
-  cursor: pointer;
-  display: none;
-}
-
-
-

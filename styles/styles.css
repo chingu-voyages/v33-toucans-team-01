@@ -74,6 +74,7 @@ img {
   width: 100%;
   overflow: auto;
   background-image: url(../Images/road.jpg);
+  background-color: ;
   background-size: cover;
 }
 
@@ -128,6 +129,7 @@ img {
     width: 100%; 
   }
 }
+
 
 /* ===================
         Cards
@@ -468,6 +470,5 @@ footer a {
     width: 500px;
   }
 }
-
 
 

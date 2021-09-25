@@ -73,7 +73,7 @@ img {
   top: 45px;
   width: 100%;
   overflow: auto;
-  background-image: url(./Images/road.jpg);
+  background-image: url(../Images/road.jpg);
   background-color: ;
   background-size: cover;
 }
@@ -109,6 +109,27 @@ img {
   cursor: pointer;
   display: none;
 }
+
+@media screen and (max-width: 800px){
+  .header-container nav{
+    position: relative;
+  }
+  .header-container_nav-list{
+    position: fixed;
+    background: black;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;   
+  }
+  .header-container_sub-dropdown{
+    display: none;
+    position: relative;
+    left: 0;
+    top: 45px;  
+    width: 100%; 
+  }
+}
+
 
 /* ===================
         Cards
@@ -449,3 +470,5 @@ footer a {
     width: 500px;
   }
 }
+
+
